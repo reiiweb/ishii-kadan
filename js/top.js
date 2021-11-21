@@ -11,7 +11,7 @@ $(function () {
       jQuery("#js-header").removeClass("headerColorScroll");
       jQuery("#js-header-img").attr(
         "src",
-        "https://rei-portfolio.github.io/ishii-kadan/img/close.png"
+        "https://rei-portfolio.github.io/ishii-kadan/img/header-logo.svg"
       );
     }
   });
