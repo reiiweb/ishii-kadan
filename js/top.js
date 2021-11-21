@@ -7,7 +7,7 @@ $(function () {
       // jQuery("#js-hamburger").addClass("headerColorScroll-false");
     } else {
       jQuery("#js-header").removeClass("headerColorScroll");
-      jQuery("#js-header-img").attr("src", "https://rei-portfolio.github.io/ishii-kadan/img/logo.pngimg/header-logo.svg");
+      jQuery("#js-header-img").attr("src", "https://rei-portfolio.github.io/ishii-kadan/img/header-logo.svg");
       // jQuery("#js-hamburger").removeClass("headerColorScroll-false");
     }
   });
