@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- index -->
+    <meta name="robots" content="noindex" />
+    <title>石井花壇 | 温海温泉旅館【公式サイト】</title>
+    <meta
+      name="description"
+      content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。 伝統的「和」の息づく空間で、至極のひとときをお過ごしください。"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="shortcut icon" href="img/" /> -->
+    <!-- <link rel="icon" type="image/x-icon" href="/path/favicon.ico"> -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <!-- flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header lower-page-header" id="js-header">
+      <div class="header-inner">
+        <a href="index.html" class="header-logo">
+          <div class="header-logo-image">
+            <img
+              src="img/logo.png"
+              alt="石井花壇 | 温海温泉旅館【公式サイト】"
+              id="js-header-img"
+            />
+          </div>
+          <!-- /.header-logo-image -->
+          <h1 class="header-logo-ttl">石井花壇</h1> </a
+        ><!-- /.header-logo -->
+
+        <button
+          type="button"
+          id="js-hamburger"
+          class="button hamburger"
+          aria-controls="js-glabal-menu"
+          aria-expanded="false"
+          area-label="メニューを開閉する"
+        >
+          <span class="hamburger__line"> </span>
+        </button>
+        <div class="sp-global-menu show hidden" id="js-global-menu" area-hidden="true">
+          <nav>
+            <ul class="header-nav">
+              <li class="header-nav-list sp-list">
+                <a href="index.html">
+                  <!-- <div class="header-logo-image"> -->
+                  <img src="img/logo.png" alt="石井花壇 | 温海温泉旅館【公式サイト】" />
+                  <!-- </div> -->
+                </a>
+              </li>
+              <li class="header-nav-list">
+                <a href="oheya.html">お部屋</a>
+              </li>
+              <li class="header-nav-list">
+                <a href="">お料理</a>
+              </li>
+              <li class="header-nav-list">
+                <a href="">温泉</a>
+              </li>
+            </ul>
+            <!-- /.header-nav -->
+          </nav>
+        </div>
+
+        <!-- <div class="header-btn"> -->
+        <button class="modal__btn" data-micromodal-trigger="modal-1" role="button">
+          <div class="modal__btn-image">
+            <img src="img/calender.png" alt="" />
+          </div>
+          <!-- /.btn-image -->
+          <p class="modal__btn-text">宿泊予約</p>
+        </button>
+        <!-- </div> -->
+        <!-- /.header-btn -->
+        <!-- アニメーションするならclass加える -->
+        <div id="modal-1" aria-hidden="true" class="modal micromodal-slide">
+          <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div
+              class="modal__container"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="modal-1-title"
+            >
+              <h2 class="modal__container-ttl">宿泊予約</h2>
+              <form class="form" id="form">
+                <div class="form-item">
+                  <label for="name" class="form-item-label">お名前 </label>
+                  <input
+                    type="text"
+                    class="form-item-text"
+                    id="name"
+                    placeholder="例：石井正悟"
+                    required
+                  />
+                </div>
+                <div class="form-item">
+                  <label for="email" class="form-item-label">メールアドレス </label>
+                  <input
+                    type="email"
+                    class="form-item-text"
+                    id="email"
+                    placeholder="例：Example@example.com"
+                    required
+                  />
+                </div>
+                <div class="form-item">
+                  <label for="plan" class="form-item-label"
+                    >ご希望プラン（空いているプランのみ表示されます）
+                  </label>
+                  <select name="" id="plan" class="form-item-select" required>
+                    <option value="" selected disabled>プランを選択してください</option>
+                    <option value="【期間限定】海辺の四季旬彩、贅沢美味懐石プラン">
+                      【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+                    </option>
+                    <option value="平日に優雅に楽しむ、特別宿泊プラン">
+                      平日に優雅に楽しむ、特別宿泊プラン
+                    </option>
+                    <option value="絶景貸切露天と個室会席を満喫できるファミリープラン">
+                      絶景貸切露天と個室会席を満喫できるファミリープラン
+                    </option>
+                  </select>
+                  <!-- /.form-item-select -->
+                </div>
+                <div class="form-item">
+                  <label for="datepicker" class="form-item-label">日時選択 </label>
+                  <input
+                    type="text"
+                    name="datepicker"
+                    id="datepicker"
+                    class="form-item-text"
+                    placeholder="日時を選択してください"
+                    required
+                  />
+                </div>
+                <input type="submit" value="送信する" class="form-submit" id="js-submit" disabled />
+              </form>
+              <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                <img src="img/close.png" alt="" data-micromodal-close />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.header-inner -->
+    </header>
+    <!-- /.header -->
+    <main></main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <ul class="footer-list">
+          <li class="footer-list-item"><a href="">温泉</a></li>
+          <!-- /.footer-list-item -->
+          <li class="footer-list-item"><a href="">お料理</a></li>
+          <!-- /.footer-list-item -->
+          <li class="footer-list-item"><a href="oheya.html">お部屋</a></li>
+          <!-- /.footer-list-item -->
+        </ul>
+        <!-- /.footer-item -->
+        <div class="heading">
+          <div class="heading-image">
+            <img src="img/logo.png" alt="石井花壇" />
+          </div>
+          <!-- /.heading-image -->
+          <a href="index.html" class="heading-ttl">石井花壇</a>
+          <!-- /.heading-ttl -->
+        </div>
+        <!-- /.heading -->
+        <ul class="footer-detail">
+          <div class="footer-detail-item">
+            <li>〒000-0000</li>
+            <li class="address">山形県鶴岡市xxxxxxxxxxx</li>
+          </div>
+          <!-- /.footer-detail-item -->
+          <div class="footer-detail-item">
+            <li>TEL.000-0000-0000</li>
+            <li>FAX.00-0000-0000</li>
+          </div>
+          <!-- /.footer-detail-item -->
+        </ul>
+        <!-- /.footer-detail -->
+      </div>
+      <!-- /.footer-inner -->
+      <small class="footer-copy">Copyright © 石井花壇 All Rights Reserved.</small
+      ><!-- /.footer-copy -->
+    </footer>
+    <!-- /.footer -->
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- micromodal.js -->
+    <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
+    <!-- IE用 -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <!-- flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- 日本語用 -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
