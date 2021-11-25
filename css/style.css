@@ -494,6 +494,7 @@ label {
 .flex-box .flex-image img {
   min-height: 500px;
   max-height: 545px;
+  width: 100%;
 }
 
 @media screen and (max-width: 810px) {
@@ -592,7 +593,7 @@ label {
 @media screen and (max-width: 615px) {
   .flex-box .flex-btn {
     color: #ffffff;
-    border: solid 0.5px #ffffff;
+    border: solid 1px #ffffff;
     text-shadow: none;
   }
 }
