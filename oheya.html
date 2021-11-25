@@ -4,22 +4,24 @@
     <meta charset="UTF-8" />
     <!-- index -->
     <meta name="robots" content="noindex" />
-    <title>石井花壇 | 温海温泉旅館【公式サイト】</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>お部屋 - 石井花壇 | 温海温泉旅館【公式サイト】</title>
     <meta
       name="description"
       content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。 伝統的「和」の息づく空間で、至極のひとときをお過ごしください。"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link rel="shortcut icon" href="img/" /> -->
-    <!-- <link rel="icon" type="image/x-icon" href="/path/favicon.ico"> -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <!-- flatpickr -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <!-- aos.js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header lower-page-header" id="js-header">
+    <header class="header lower-header" id="js-header">
       <div class="header-inner">
         <a href="index.html" class="header-logo">
           <div class="header-logo-image">
@@ -57,10 +59,10 @@
                 <a href="oheya.html">お部屋</a>
               </li>
               <li class="header-nav-list">
-                <a href="">お料理</a>
+                <a href="menu.html">お料理</a>
               </li>
               <li class="header-nav-list">
-                <a href="">温泉</a>
+                <a href="onsen.html">温泉</a>
               </li>
             </ul>
             <!-- /.header-nav -->
@@ -137,7 +139,7 @@
                     required
                   />
                 </div>
-                <input type="submit" value="送信する" class="form-submit" id="js-submit" disabled />
+                <input type="submit" value="送信する" class="form-submit" id="js-submit" />
               </form>
               <button class="modal__close" aria-label="Close modal" data-micromodal-close>
                 <img src="img/close.png" alt="" data-micromodal-close />
@@ -149,14 +151,125 @@
       <!-- /.header-inner -->
     </header>
     <!-- /.header -->
-    <main></main>
+
+    <!-- main -->
+    <main>
+      <!-- lower-fv -->
+      <div class="lower-fv" data-aos="fade-zoom-in">
+        <div class="lower-fv-image">
+          <img src="img/oheya-header.jpg" alt="お部屋" />
+        </div>
+        <!-- /.lower-fv-image -->
+        <h2 class="lower-fv-ttl">お部屋</h2>
+        <!-- /.lower-ttl -->
+      </div>
+      <!-- /.lower-fv -->
+
+      <div class="lower-container">
+        <!-- pagination -->
+        <ul class="pagination">
+          <li class="pagination-list">
+            <a href="https://rei-portfolio.github.io/ishii-kadan/">トップ</a>
+          </li>
+          <li class="pagination-list">
+            <a href="https://rei-portfolio.github.io/ishii-kadan/oheya.html">お部屋</a>
+          </li>
+        </ul>
+        <!-- /.pagination -->
+
+        <!-- lower-copy -->
+        <p class="lower-copy" data-aos="fade-zoom-in">
+          創業より受け継がれてきた石井花壇の和の造り<br />
+          温海の雄大な絶景を堪能していただけるように設計された客室<br />
+          ゆるやかに流れ行く時間に身を委ねて
+        </p>
+        <!-- /.lower-copy -->
+      </div>
+      <!-- /.low-container -->
+
+      <!-- lower-item -->
+      <section class="lower-item" data-aos="fade-zoom-in">
+        <div class="lower-item-image">
+          <img src="img/oheya01.jpg" alt="温泉付き客室" />
+        </div>
+        <!-- /.lower-item-image -->
+        <div class="lower-item-content">
+          <h3 class="lower-item-ttl">温泉付き客室</h3>
+          <!-- /.lower-item-ttl -->
+          <p class="lower-item-text">
+            温海の源泉かけ流し露天風呂付き客室になります。<br />
+            あなただけの上質な安らぎのひとときを。
+          </p>
+          <!-- /.lower-item-text -->
+          <p class="lower-item-confirm">
+            ＊部屋数に限りがございます。<br />
+            ＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。
+          </p>
+          <!-- /.lower-item-text -->
+        </div>
+        <!-- /.lower-item-content -->
+      </section>
+      <!-- /.lower-item -->
+
+      <!-- lower-item -->
+      <section class="lower-item" data-aos="fade-zoom-in">
+        <div class="lower-item-content lower-item-content-even">
+          <h3 class="lower-item-ttl">庭園付き客室</h3>
+          <!-- /.lower-item-ttl -->
+          <p class="lower-item-text">
+            庭園付きの客室になります。<br />
+            お庭を見ながら、ほっとするひとときをお過ごしください。
+          </p>
+          <!-- /.lower-item-text -->
+          <p class="lower-item-confirm">
+            ＊お庭は複数のお客様と囲む形になります。<br />
+            ＊部屋数に限りがあります。<br />
+            ＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。
+          </p>
+          <!-- /.lower-item-text -->
+        </div>
+        <!-- /.lower-item-content -->
+        <div class="lower-item-image lower-item-image-even">
+          <img src="img/oheya02.jpg" alt="庭園付き客室" />
+        </div>
+        <!-- /.lower-item-image -->
+      </section>
+      <!-- /.lower-item -->
+
+      <!-- lower-item -->
+      <section class="lower-item" data-aos="fade-zoom-in">
+        <div class="lower-item-image">
+          <img src="img/oheya03.jpg" alt="一般客室" />
+        </div>
+        <!-- /.lower-item-image -->
+        <div class="lower-item-content">
+          <h3 class="lower-item-ttl">一般客室</h3>
+          <!-- /.lower-item-ttl -->
+          <p class="lower-item-text">
+            最もベーシックな客室になります。伝統の中にモダンさを取り入れた内装となっており、とても過ごしやすくしていただけます。
+          </p>
+          <!-- /.lower-item-text -->
+          <p class="lower-item-confirm lower-item-confirm-last">
+            ＊全室お部屋より日本海を望むことができます。
+          </p>
+          <!-- /.lower-item-text -->
+        </div>
+        <!-- /.lower-item-content -->
+      </section>
+      <!-- /.lower-item -->
+
+      <!-- lower-efficacy -->
+      <!-- <section class="lower-efficacy"></section> -->
+      <!-- /.lower-efficacy -->
+    </main>
+    <!-- /.main -->
 
     <footer class="footer">
       <div class="footer-inner">
         <ul class="footer-list">
-          <li class="footer-list-item"><a href="">温泉</a></li>
+          <li class="footer-list-item"><a href="onsen.html">温泉</a></li>
           <!-- /.footer-list-item -->
-          <li class="footer-list-item"><a href="">お料理</a></li>
+          <li class="footer-list-item"><a href="menu.html">お料理</a></li>
           <!-- /.footer-list-item -->
           <li class="footer-list-item"><a href="oheya.html">お部屋</a></li>
           <!-- /.footer-list-item -->
@@ -201,6 +314,8 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <!-- 日本語用 -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- js -->
     <script src="js/main.js"></script>
   </body>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <!-- index -->
     <meta name="robots" content="noindex" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>石井花壇 | 温海温泉旅館【公式サイト】</title>
     <meta
       name="description"
@@ -12,11 +13,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- 電話リンク無効 -->
     <meta name="format-detection" content="telephone=no">
-    <!-- <link rel="shortcut icon" href="img/" /> -->
-    <!-- <link rel="icon" type="image/x-icon" href="/path/favicon.ico"> -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <!-- flatpickr -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <!-- aos.js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -59,10 +61,10 @@
                 <a href="oheya.html">お部屋</a>
               </li>
               <li class="header-nav-list">
-                <a href="">お料理</a>
+                <a href="menu.html">お料理</a>
               </li>
               <li class="header-nav-list">
-                <a href="">温泉</a>
+                <a href="onsen.html">温泉</a>
               </li>
             </ul>
             <!-- /.header-nav -->
@@ -75,7 +77,7 @@
             <img src="img/calender.png" alt="" />
           </div>
           <!-- /.btn-image -->
-          <p class="btn">宿泊予約</p>
+          <p class="modal__btn-text">宿泊予約</p>
         </button>
         <!-- </div> -->
         <!-- /.header-btn -->
@@ -139,7 +141,7 @@
                     required
                   />
                 </div>
-                <input type="submit" value="送信する" class="form-submit" id="js-submit" disabled />
+                <input type="submit" value="送信する" class="form-submit" id="js-submit" />
               </form>
               <button class="modal__close" aria-label="Close modal" data-micromodal-close>
                 <img src="img/close.png" alt="" data-micromodal-close />
@@ -164,7 +166,7 @@
       <!-- /.fv -->
 
       <!-- copy -->
-      <section class="copy">
+      <section class="copy" data-aos="fade-zoom-in">
         <div class="copy-inner">
           <h2 class="copy-ttl">
             温海温泉の<br />
@@ -198,7 +200,7 @@
 
       <div class="flex-box">
         <!-- flex -->
-        <section class="flex">
+        <section class="flex" data-aos="fade-zoom-in">
           <!-- <div class="flex-inner"> -->
           <div class="flex-image">
             <img src="img/oheya-top.jpg" alt="騒から離れた空間、心落ち着く至極のひととき" />
@@ -217,7 +219,7 @@
               />ひたすらにゆったりと…。<br />最高級の「何もしない時間」をお過ごしください。
             </p>
             <!-- /.flex-text -->
-            <a href="" class="flex-btn">お部屋について</a
+            <a href="oheya.html" class="flex-btn">お部屋について</a
             ><!-- /.flex-btn -->
           </div>
           <!-- /.flex-content -->
@@ -227,7 +229,7 @@
         <!-- /.flex -->
 
         <!-- flex -->
-        <section class="flex">
+        <section class="flex" data-aos="fade-zoom-in">
           <!-- <div class="flex-inner"> -->
           <div class="flex-content flex-content-even">
             <h2 class="flex-ttl">
@@ -239,7 +241,7 @@
               最も旬の食材を愉しむ、最高の贅沢を最高級A5ランクの米沢牛と共に頂く。<br />あなたの人生史に残る「極上の感動」をお約束します。
             </p>
             <!-- /.flex-text -->
-            <a href="" class="flex-btn">料理について</a>
+            <a href="menu.html" class="flex-btn">料理について</a>
             <!-- /.flex-btn -->
           </div>
           <!-- /.flex-content -->
@@ -253,7 +255,7 @@
         <!-- /.flex -->
 
         <!-- flex -->
-        <section class="flex">
+        <section class="flex" data-aos="fade-zoom-in">
           <!-- <div class="flex-inner"> -->
           <div class="flex-image">
             <img src="img/onsen-top.jpg" alt="騒から離れた空間、心落ち着く至極のひととき" />
@@ -266,7 +268,7 @@
               古くは弘法大師の病をも治療したと言われる熱海の泉質。<br />現代人の疲弊しきった身体を修復する最高級の湯治場としてご活用ください。
             </p>
             <!-- /.flex-text -->
-            <a href="" class="flex-btn">温泉について</a
+            <a href="onsen.html" class="flex-btn">温泉について</a
             ><!-- /.flex-btn -->
           </div>
           <!-- /.flex-content -->
@@ -279,7 +281,7 @@
 
       <!-- recommended -->
       <section class="recommended">
-        <div class="recommended-inner">
+        <div class="recommended-inner" data-aos="fade-zoom-in">
           <div class="heading">
             <div class="heading-image">
               <img src="img/logo.png" alt="石井花壇" />
@@ -319,8 +321,7 @@
                 </h3>
                 <!-- /.recommended-list-item-ttl -->
                 <p class="recommended-list-item-text">
-                  温海で水揚げされた蟹は「温海蟹」として知られ、嗜好品として愛されて
-                  きました。この宿泊プランでは存分に
+                  温海で水揚げされた蟹は「温海蟹」として知られ、嗜好品として愛されてきました。この宿泊プランでは存分に
                 </p>
                 <!-- /.recommended-list-item-text -->
               </a>
@@ -351,7 +352,7 @@
       <!-- /.recommended -->
 
       <!-- news -->
-      <section class="news">
+      <section class="news" data-aos="fade-zoom-in">
         <div class="news-inner">
           <div class="heading">
             <div class="heading-image">
@@ -474,7 +475,7 @@
                       <!-- /.tab-content__item-list -->
                       <div class="tab-content__item-list-text">
                         <time>2020.12.24</time>
-                        <p>年末最後の営業日は27日になります。</p>
+                        <p>「緊急事態宣言」延長に伴う営業内容の変更について</p>
                       </div>
                       <!-- /.tab-content__item-list-text -->
                     </a>
@@ -487,7 +488,7 @@
                       <!-- /.tab-content__item-list -->
                       <div class="tab-content__item-list-text">
                         <time>2020.12.11</time>
-                        <p>12.21は臨時休業とさせていただきますので、よろしくお願いします。</p>
+                        <p>Go Toトラベルキャンペーンについて</p>
                       </div>
                       <!-- /.tab-content__item-list-text -->
                     </a>
@@ -500,7 +501,7 @@
                       <!-- /.tab-content__item-list -->
                       <div class="tab-content__item-list-text">
                         <time>2020.12.01</time>
-                        <p>和室の改装を行いますため、12.10はお休みさせていただきます。</p>
+                        <p>「緊急事態宣言」延長に伴う営業内容の変更について</p>
                       </div>
                       <!-- /.tab-content__item-list-text -->
                     </a>
@@ -516,7 +517,7 @@
                       <!-- /.tab-content__item-list -->
                       <div class="tab-content__item-list-text">
                         <time>2020.12.24</time>
-                        <p>年末最後の営業日のお知らせ</p>
+                        <p>Go Toトラベルキャンペーンについて</p>
                       </div>
                       <!-- /.tab-content__item-list-text -->
                     </a>
@@ -529,7 +530,7 @@
                       <!-- /.tab-content__item-list -->
                       <div class="tab-content__item-list-text">
                         <time>2020.12.24</time>
-                        <p>年末最後の営業日のお知らせ</p>
+                        <p>「緊急事態宣言」延長に伴う営業内容の変更について</p>
                       </div>
                       <!-- /.tab-content__item-list-text -->
                     </a>
@@ -542,7 +543,7 @@
                       <!-- /.tab-content__item-list -->
                       <div class="tab-content__item-list-text">
                         <time>2020.12.24</time>
-                        <p>年末最後の営業日のお知らせ</p>
+                        <p>Go Toトラベルキャンペーンについて</p>
                       </div>
                       <!-- /.tab-content__item-list-text -->
                     </a>
@@ -559,7 +560,7 @@
       <!-- /.news -->
 
       <!-- access -->
-      <section class="access">
+      <section class="access" data-aos="fade-zoom-in">
         <div class="heading">
           <div class="heading-image">
             <img src="img/logo.png" alt="石井花壇" />
@@ -611,11 +612,11 @@
     <footer class="footer">
       <div class="footer-inner">
         <ul class="footer-list">
-          <li class="footer-list-item"><a href="">温泉</a></li>
+          <li class="footer-list-item"><a href="onsen.html">温泉</a></li>
           <!-- /.footer-list-item -->
-          <li class="footer-list-item"><a href="">お料理</a></li>
+          <li class="footer-list-item"><a href="menu.html">お料理</a></li>
           <!-- /.footer-list-item -->
-          <li class="footer-list-item"><a href="">お部屋</a></li>
+          <li class="footer-list-item"><a href="oheya.html">お部屋</a></li>
           <!-- /.footer-list-item -->
         </ul>
         <!-- /.footer-item -->
@@ -658,6 +659,8 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <!-- 日本語用 -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- js -->
     <script src="js/main.js"></script>
     <script src="js/top.js"></script>
