@@ -17,7 +17,7 @@ $(function () {
     duration: 3000,
     easing: "ease",
     delay: 90,
-    once: false,
+    once: true,
     anchorPlacement: "bottom-center",
     // easing: "ease-in-back",
     // delay: 300,
