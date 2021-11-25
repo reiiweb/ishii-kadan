@@ -1,16 +1,4 @@
 $(function () {
-  // // スクロールするとヘッダーの背景色変更
-  // jQuery(window).on("scroll", function () {
-  //   if (jQuery("#js-header").height() < jQuery(this).scrollTop()) {
-  //     jQuery("#js-header").addClass("headerColorScroll");
-  //     jQuery("#js-header-img").attr("src", "../img/logo.png").fadeIn(5000);
-  //   } else {
-  //     jQuery("#js-header").removeClass("headerColorScroll");
-  //     jQuery("#js-header-img").attr("src", "../img/header-logo.svg");
-
-  //   }
-  // });
-
   // Aos
   AOS.init({
     offset: 200,
@@ -19,9 +7,6 @@ $(function () {
     delay: 90,
     once: true,
     anchorPlacement: "bottom-center",
-    // easing: "ease-in-back",
-    // delay: 300,
-    // offset: 0,
   });
 
   // ハンバーガーメニュー
@@ -39,31 +24,12 @@ $(function () {
     }
   });
 
-  $("#js-global-menu a").click(function () {
-    if ($(window).width() < 810) {
-      $("#js-global-menu").fadeOut(100); //.nav-wrapperが0.1秒でフェードアウト(メニューのフェードアウト)
-      $("#js-hamburger").attr("aria-expanded", false);
-      $("#js-global-menu").attr("area-hidden", "true");
-      $("body").removeClass("noscroll"); //bodyのnoscrollクラスを削除
-    }
-  });
-
-  // 画面幅広げてもリストなくならないように
-  window.matchMedia("(max-width: 810px)").addEventListener("change", (e) => {
-    if (!e.matches) $("#js-global-menu").attr("style", null);
-  });
-
   // tab
   $(".js-tab-trigger").on("click", function () {
-    //まずは全triggerからclass削除
     $(".js-tab-trigger").removeClass("is-active");
-    //次に全targetからclass削除
     $(".js-tab-target").removeClass("is-active");
-    //次にクリックした要素にis-active
     $(this).addClass("is-active");
-    //data属性を取得する
     let id = $(this).data("id");
-    //data属性値=idが等しいものにclass付与
     $("#" + id).addClass("is-active");
   });
   // .//tab
