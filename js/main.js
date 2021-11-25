@@ -11,6 +11,19 @@ $(function () {
   //   }
   // });
 
+  // Aos
+  AOS.init({
+    offset: 200,
+    duration: 3000,
+    easing: "ease",
+    delay: 90,
+    once: false,
+    anchorPlacement: "bottom-center",
+    // easing: "ease-in-back",
+    // delay: 300,
+    // offset: 0,
+  });
+
   // ハンバーガーメニュー
   $("#js-hamburger").click(function () {
     $("body").toggleClass("is-drawerActive");

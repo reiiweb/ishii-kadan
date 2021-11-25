@@ -1,0 +1,144 @@
+@include mq(tablet) {
+  .header {
+    .hamburger {
+      display: block;
+    }
+    &-nav {
+      display: block;
+      text-align: center;
+      &-list {
+        margin-right: 0;
+      }
+    }
+    // .pc-btn {
+    //   display: none;
+    // }
+    // &-logo-image {
+    //     margin-right: 0;
+    // }
+  }
+
+  .noscroll {
+    overflow: hidden;
+  }
+
+  .button {
+    display: inline-block;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 22px;
+    right: 2.3%;
+    z-index: 11;
+    width: 40px;
+    height: 36px;
+    outline: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger__line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 29.77px;
+    height: 2px;
+    background-color: $sub-color;
+    -webkit-transition: inherit;
+    transition: inherit;
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: inherit;
+      content: "";
+      -webkit-transition: inherit;
+      transition: inherit;
+    }
+  }
+
+  .hamburger__line::before {
+    top: -10px;
+  }
+  .hamburger__line::after {
+    top: 10px;
+  }
+
+  .hamburger[aria-expanded="true"] .hamburger__line {
+    background-color: transparent;
+    &::before,
+    &::after {
+      top: 0;
+      background-color: $main-color;
+    }
+  }
+  .hamburger[aria-expanded="true"] .hamburger__line::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .hamburger[aria-expanded="true"] .hamburger__line::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .sp-global-menu {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: none;
+    height: 100vh;
+    color: $main-color;
+    background-color: $sub-color;
+    z-index: 3;
+    display: none;
+    // visibility: hidden;
+    .sp-list {
+      display: block;
+      // width: 60px;
+      width: 40px;
+      height: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      // text-align: center;
+    }
+    .header-nav {
+      position: absolute;
+      text-align: center;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      &-list {
+        margin-bottom: 30px;
+        a {
+          color: $main-color;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+.headerColorScroll-false {
+  filter: brightness(0);
+  // transition: all 0.3s;
+}
+

@@ -1,0 +1,74 @@
+.footer {
+  &-inner {
+    background-image: url(../img/bg03.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 64px 0 61px;
+  }
+  &-list {
+    display: flex;
+    justify-content: center;
+
+    &-item {
+      @include ja;
+      margin-left: 34px;
+      padding-bottom: 96px;
+      &:first-child {
+        margin-left: 0;
+      }
+      a {
+        height: 81px;
+        color: $main-color;
+        font-size: 1.8rem;
+        line-height: 2.3;
+        letter-spacing: 0.2em;
+      }
+    }
+  }
+  .heading {
+    &-ttl {
+      display: block;
+      color: $main-color;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  &-detail {
+    padding-top: 72px;
+    &-item {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 23px;
+      @include mq(sh) {
+        flex-direction: column;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+      li {
+        margin-left: 21px;
+        @include mq(sh) {
+          margin-left: 0;
+          text-align: center;
+          line-height: 26px;
+        }
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      .address {
+        letter-spacing: 2.88px;
+      }
+    }
+  }
+  &-copy {
+    display: block;
+    background-color: $main-color;
+    color: $sub-color;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 23px 0 25px;
+  }
+}
