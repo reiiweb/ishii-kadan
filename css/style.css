@@ -540,7 +540,7 @@ label {
     padding-top: 20px;
     position: absolute;
     color: #ffffff;
-    text-shadow: 0 3px 6px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
     min-height: 545px;
     background-color: rgba(0, 0, 0, 0.4);
   }
@@ -808,8 +808,9 @@ label {
   /* Firefox用 */
   -ms-writing-mode: tb-rl;
   /* IE用 */
-  margin-left: 34px;
+  margin-left: 30px;
   padding-bottom: 96px;
+  font-size: 1.8rem;
 }
 
 .footer-list-item:first-child {
@@ -817,11 +818,9 @@ label {
 }
 
 .footer-list-item a {
-  height: 81px;
   color: #000000;
   font-size: 1.8rem;
-  line-height: 2.3;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.68em;
 }
 
 .footer .heading-ttl {
@@ -1649,7 +1648,7 @@ label {
     color: #ffffff;
     padding-top: 15%;
     padding-right: 11%;
-    text-shadow: 0 3px 10px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.5);
   }
