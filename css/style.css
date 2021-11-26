@@ -57,6 +57,7 @@ input {
   -webkit-appearance: none;
   outline: none;
   border: none;
+  border-radius: 0;
 }
 
 input,
