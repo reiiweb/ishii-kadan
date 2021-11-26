@@ -1841,6 +1841,7 @@ label {
 
 @media screen and (max-width: 615px) {
   .onsen-efficacy dl dt {
+    padding-left: 10px;
     width: 30%;
   }
 }
