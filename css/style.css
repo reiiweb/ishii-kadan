@@ -457,7 +457,7 @@ label {
 }
 
 .flex-box {
-  padding: 106px 0 78px;
+  margin: 106px 0 78px;
 }
 
 .flex-box .flex {
@@ -482,7 +482,7 @@ label {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 122px 0;
+  margin: 122px 0;
 }
 
 @media screen and (max-width: 810px) {
@@ -492,7 +492,7 @@ label {
     -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding: 61px 0;
+    margin: 61px 0;
   }
 }
 
@@ -517,9 +517,19 @@ label {
 @media screen and (max-width: 810px) and (max-width: 615px) {
   .flex-box .flex-image {
     position: relative;
+    min-height: 545px;
   }
   .flex-box .flex-image img {
     min-height: 545px;
+  }
+}
+
+@media screen and (max-width: 810px) and (max-width: 615px) and (max-width: 352px) {
+  .flex-box .flex-image {
+    min-height: 620px;
+  }
+  .flex-box .flex-image img {
+    min-height: 620px;
   }
 }
 
@@ -550,10 +560,18 @@ label {
   .flex-box .flex-content {
     padding-top: 20px;
     position: absolute;
+    top: 0;
     color: #ffffff;
     text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
     min-height: 545px;
+    height: 545px;
     background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media screen and (max-width: 810px) and (max-width: 615px) and (max-width: 352px) {
+  .flex-box .flex-content {
+    height: 620px;
   }
 }
 
@@ -1131,6 +1149,12 @@ label {
   display: flex;
   color: #000000;
   max-height: 130px;
+}
+
+@media screen and (max-width: 352px) {
+  .news .tab-content__item-list a {
+    max-height: 180px;
+  }
 }
 
 .news .tab-content__item-list img {
