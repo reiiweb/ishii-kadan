@@ -50,7 +50,8 @@ p {
   line-height: 2;
 }
 
-input {
+input,
+select {
   resize: none;
   -moz-appearance: none;
        appearance: none;
