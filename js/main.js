@@ -33,25 +33,27 @@ $(function () {
     $("#" + id).addClass("is-active");
   });
   // .//tab
-});
 
-// modal
-MicroModal.init({
-  // openClass: "is-open",
-  disableScroll: true,
-  awaitOpenAnimation: true,
-  awaitCloseAnimation: true,
-});
-//.//modal
+  // modal
+  MicroModal.init({
+    // openClass: "is-open",
+    disableScroll: true,
+    awaitOpenAnimation: true,
+    awaitCloseAnimation: true,
+    
+  });
+  //.//modal
+  
 
-// flatpickr
-const config = {
-  locale: "ja", // 日本語用モジュールを適用
-  dateFormat: "Y.m.d（D）", // 2021.05.24（月）の形式で表示
-  // 時間指定
-  // enableTime: true,
-  minDate: "today",
-  mode: "range",
-};
-flatpickr("#datepicker", config);
-// .//flatpickr
+  // flatpickr
+  const config = {
+    locale: "ja", // 日本語用モジュールを適用
+    dateFormat: "Y.m.d（D）", // 2021.05.24（月）の形式で表示
+    // 時間指定
+    // enableTime: true,
+    minDate: "today",
+    mode: "range",
+  };
+  flatpickr("#datepicker", config);
+  // .//flatpickr
+});

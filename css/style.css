@@ -1216,7 +1216,16 @@ label {
   }
 }
 
+#modal-1 {
+  display: none;
+}
+
+#modal-1.is-open {
+  display: block;
+}
+
 .modal__overlay {
+  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -1416,6 +1425,10 @@ label {
   .modal__btn-text {
     font-size: 1.4rem;
   }
+}
+
+.modal__close::before {
+  content: "\2715";
 }
 
 /* Animation */
