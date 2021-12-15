@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "reicodeups"
+AuthUserFile "https://rei-portfolio.github.io/ishii-kadan/.htpasswd"
+require valid-user
